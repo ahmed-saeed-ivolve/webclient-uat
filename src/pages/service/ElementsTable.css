@@ -1,0 +1,10 @@
+tr:hover {
+    cursor: pointer;
+}
+
+.rowButton {
+    font-family: 'Open Sans';
+    font-weight: 600;
+    margin-right: 5px;
+    margin-bottom: 12px;
+}

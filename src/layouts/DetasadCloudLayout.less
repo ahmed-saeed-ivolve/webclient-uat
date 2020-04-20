@@ -1,0 +1,114 @@
+@detasad-brand-color : #06597F;
+
+.ds-globalHeader {
+  font-family: 'Raleway', sans-serif !important;
+  font-weight: 600;
+  
+  border-top: 2px solid #85cbda;
+  background-color: @detasad-brand-color;
+  padding: 0px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ 
+  z-index: 9;
+ 
+ 
+}
+.ds-globalHeader-responsive {
+  font-family: 'Open Sans', sans-serif !important;
+  font-weight: 600;
+  background-color: @detasad-brand-color;
+  padding: 0px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ 
+  z-index: 9;
+ 
+ 
+}
+
+.responsive-nav-fold-icon {
+  color: #ffffff !important;
+  font-size: 25px !important;
+  cursor: pointer !important;
+}
+
+.leftUL {
+  display: flex;
+  height: 100%;
+  flex-flow: row;
+ 
+}
+.leftUL li {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .ds-globalHeader {
+   
+  }
+}
+
+.ds-gh-links-ul-dropdown {
+  display: inline-flex;
+  align-items: center;
+  i {
+    font-size: 11px;
+  }
+}
+.services-container {
+  z-index: 10;
+  position: fixed;
+  top: 58px;
+  background: #fff;
+  width: 100%;
+}
+
+
+.ds-gh-searchbar {
+ 
+  min-height: inherit;
+  width: 300px;
+  background: #0c2b3c;
+  .ds-gh-searchbar-override {
+    & > span {
+      background-color: transparent;
+      i {
+        color: rgb(245, 245, 245) !important;
+      }
+    }
+
+    input {
+      background-color: transparent;
+      outline: 0px solid transparent;
+      border: 0px solid transparent;
+      height: 40px;
+      border-radius: 0px;
+      padding-left: 40px !important;
+      color: rgb(182, 66, 66);
+
+      &:hover {
+        border-right-width: 0px !important;
+        border: 0px !important;
+        outline: 0;
+        box-shadow: initial;
+      }
+      &:focus {
+        border: 0px !important;
+        outline: 0;
+        box-shadow: initial;
+      }
+      &::placeholder {
+        color: rgba(245, 245, 245, 0.5) !important;
+      }
+    }
+  }
+}
+
+.blur{
+  filter: blur(2px);
+  pointer-events: none;
+}

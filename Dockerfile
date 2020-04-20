@@ -2,6 +2,11 @@ FROM node:10.18-alpine
 RUN mkdir web-client
 WORKDIR /web-client
 COPY . /web-client
+RUN npm uninstall
+RUN npm install
+RUN apk add yarn
+#Build files
+RUN yarn run build
 #install nginx
 RUN apk add nginx
 RUN mkdir -p /run/nginx

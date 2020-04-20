@@ -1,0 +1,11 @@
+.errorMessageComponent {
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    color: #d00000;
+    background-color: rgb(255, 255, 255, 0.7);
+    text-align: center;
+    font-size: 14px;
+    z-index: 1;
+    padding-top: 120px;
+}
